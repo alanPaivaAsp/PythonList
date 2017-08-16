@@ -3,17 +3,23 @@
 ''' #Exercise 1 : 
 Faça um programa que peça dois números inteiros e imprima a soma desses dois números '''
 n = list()
-x = 1
 sum = 0
 for x in range (0,2):
-   n.append(int(input("num:")))
+   #Recebendo o valor e adicionando no array n[]
+   print("Digite o ",x+1,"numero:")
+   n.append(int(input()))
+   #somando o valor recebido no array n[]
    sum += n[x]
-  
+#printando o valor da soma depois de ter perguntado os 2 valores no for acima
 print("SOMA:",sum)
 #--------------------------------------------------------------------------------------------
 
 ''' #Exercise 2 : 
 Escreva um programa que leia um valor em metros e o exiba convertido em milímetros '''
+x = int(input("Digite o valor em metros: \n"))
+print(y*1000,"MM")
+
+
 
 #--------------------------------------------------------------------------------------------
 
