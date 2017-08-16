@@ -4,10 +4,11 @@
 Faça um programa que peça dois números inteiros e imprima a soma desses dois números '''
 n = list()
 x = 1
-sum = 0;
+sum = 0
 for x in range (0,2):
    n.append(int(input("num:")))
    sum += n[x]
+  
 print("SOMA:",sum)
 #--------------------------------------------------------------------------------------------
 
