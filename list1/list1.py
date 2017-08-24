@@ -47,14 +47,14 @@ print("Total em segundos:",segundos,"\n \n \n \n \n")
 Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a
 porcentagem do aumento. Exiba o valor do aumento e do novo salário. '''
 #Recebendo os valores
-sal_atual = float(input("Digite seu salário atual: "))
+sal_atual = float(input("Digite seu salario atual: "))
 por_aumento = float(input("Digite porcentagem de aumento:"))
 #Calculando o aumento e o novo salário
-aumento = (sal_atual*aumento)/100
+aumento = (sal_atual*por_aumento)/100
 novo_sal = aumento + sal_atual
 #printando na tela os resultados
-print("O valor do aumento será: ",aumento)
-print("O novo salário será: ",novo_sal, "\n \n \n \n \n")
+print("O valor do aumento sera: ",aumento)
+print("O novo salario sera: ",novo_sal, "\n \n \n \n \n")
 
 
 #--------------------------------------------------------------------------------------------
@@ -78,12 +78,12 @@ print("Novo valor: ",novo_valor,"R$ \n \n \n \n \n")
 Calcule o tempo de uma viagem de carro. Pergunte a distância a percorrer e a velocidade média
 esperada para a viagem.  '''
 #Recebendo DeltaS e VM
-dist = float(input("Digite a distância da viagem em KM: "))
-vm = float(input("Digite a velocidade média esperada KM/H: "))
+dist = float(input("Digite a distancia da viagem em KM: "))
+vm = float(input("Digite a velocidade madia esperada KM/H: "))
 #calculando com a formula de Velocidade média
 dt = vm/dist
 #imprimindo o resultado
-print("O tempo estimado de viagem é: ",dt,"horas \n \n \n \n \n")
+print("O tempo estimado de viagem e: ",dt,"horas \n \n \n \n \n")
 
 #--------------------------------------------------------------------------------------------
 
@@ -91,12 +91,17 @@ print("O tempo estimado de viagem é: ",dt,"horas \n \n \n \n \n")
 Converta uma temperatura digitada em Celsius para Fahrenheit. F = 9*C/5 + 32'''
 celsius = float(input("Digite a temperatura em Celsius"))
 fahren = ((9*celsius)/5)+32
-print("F°: ",fahren,"\n \n \n \n \n")
+print("F : ",fahren,"\n \n \n \n \n")
 
 #--------------------------------------------------------------------------------------------
 
 ''' #Exercise 8 : 
-Faça agora o contrário, de Fahrenheit para Celsius. '''
+Faça agora o contrário, de Fahrenheit para Celsius. C/5 = F−32/9'''
+fahren = float(input("Digite a temperatura em Fahrenheit: "))
+fahren -= 32
+fahren /= 9
+fahren /= 2
+print("Celsius C %.2f" %fahren)
 
 #--------------------------------------------------------------------------------------------
 
@@ -105,6 +110,10 @@ Escreva um programa que pergunte a quantidade de km percorridos por um carro alu
 usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar,
 sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por km rodado.'''
 
+km = float(input("Quantidade de KM percorridos: "))
+dias = int(input("Quantidade de dias alugados: "))
+print("Total R$: %.2f"% ((dias*60)+(km*0.15)))
+
 #--------------------------------------------------------------------------------------------
 
 ''' #Exercise 10 : 
@@ -112,6 +121,10 @@ Escreva um programa para calcular a redução do tempo de vida de um fumante. Pe
 quantidade de cigarros fumados por dia e quantos anos ele já fumou. Considere que um fumante
 perde 10 minutos de vida a cada cigarro, calcule quantos dias de vida um fumante perderá. Exiba o
 total de dias.'''
+cig = int(input("Favor, digite quantos cigarros fumados por dia: "))
+anos = int(input("Favor, digite quantos anos ja fumou:"))
+print("Você perderá %d dias de sua vida" %((cig*10)*(anos*365)/24))
+
 
 #--------------------------------------------------------------------------------------------
 
