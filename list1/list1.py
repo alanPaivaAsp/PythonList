@@ -89,7 +89,7 @@ print("O tempo estimado de viagem e: ",dt,"horas \n \n \n \n \n")
 
 ''' #Exercise 7 : 
 Converta uma temperatura digitada em Celsius para Fahrenheit. F = 9*C/5 + 32'''
-celsius = float(input("Digite a temperatura em Celsius"))
+celsius = float(input("Digite a temperatura em Celsius: "))
 fahren = ((9*celsius)/5)+32
 print("F : ",fahren,"\n \n \n \n \n")
 
@@ -98,10 +98,8 @@ print("F : ",fahren,"\n \n \n \n \n")
 ''' #Exercise 8 : 
 Faça agora o contrário, de Fahrenheit para Celsius. C/5 = F−32/9'''
 fahren = float(input("Digite a temperatura em Fahrenheit: "))
-fahren -= 32
-fahren /= 9
-fahren /= 2
-print("Celsius C %.2f" %fahren)
+celsius = ((fahren-32)/9) * 5
+print("Celsius C %.2f \n\n\n\n\n\n\n\n " %celsius)
 
 #--------------------------------------------------------------------------------------------
 
@@ -112,7 +110,7 @@ sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por km rodado.'''
 
 km = float(input("Quantidade de KM percorridos: "))
 dias = int(input("Quantidade de dias alugados: "))
-print("Total R$: %.2f"% ((dias*60)+(km*0.15)))
+print("Total R$: %.2f \n\n\n\n\n\n\n"% ((dias*60)+(km*0.15)))
 
 #--------------------------------------------------------------------------------------------
 
@@ -123,7 +121,7 @@ perde 10 minutos de vida a cada cigarro, calcule quantos dias de vida um fumante
 total de dias.'''
 cig = int(input("Favor, digite quantos cigarros fumados por dia: "))
 anos = int(input("Favor, digite quantos anos ja fumou:"))
-print("Você perderá %d dias de sua vida" %((cig*10)*(anos*365)/24))
+print("Voce perdera %d dias de sua vida \n\n\n\n\n\n\n\n" %((cig*10)*(anos*365)/24))
 
 
 #--------------------------------------------------------------------------------------------
@@ -131,6 +129,8 @@ print("Você perderá %d dias de sua vida" %((cig*10)*(anos*365)/24))
 ''' #Exercise 11 : 
 Sabendo que str( ) converte valores numéricos para string, calcule quantos dígitos há em 2 elevado
 a um milhão. '''
+print ("Existem %s digitos em 2^1000000" %len(str(2**1000000)))
+
 
 #--------------------------------------------------------------------------------------------
 
