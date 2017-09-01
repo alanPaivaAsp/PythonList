@@ -48,6 +48,21 @@ Caso contrário mostrar tais variáveis com o conteúdo ZERO.'''
 '''
 EXERCISE 4
 Faça um Programa que leia três números e mostre o maior deles.'''
+maior = 0
+num = list ()
+for x in range (0,3):
+  print('Digite %d numero: ' %(x+1))
+  num.append(int(input()))
+  
+if num[0] > num[1] and num[0] > num[2]:
+  maior = num[0]
+elif num[1] > num[0] and num[1] > num[2]:
+  maior = num[1]
+else:
+  maior = num[2]
+print('Maior numero : %d \n\n\n\n\n\n\n\n\n\n\n' %maior)
+
+  
 #__________________________________________________________________________________________________________
 '''
 EXERCISE 5
