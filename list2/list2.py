@@ -19,22 +19,23 @@ if c > ((a-b)*-1) and c < (a+b):
 if val_a == True and val_b == True and val_c == True:
   print('Valores validos para se formar um triangulo')
 if a == b and a == c and b == c:
-  print('E tambem o triangulo e um equilatero')
+  print('E tambem o triangulo e um equilatero \n \n \n \n \n \n \n ')
 elif a != b and a !=c and b!= c:
-  print('E tambem e um triangulo escaleno')
+  print('E tambem e um triangulo escaleno \n \n \n \n \n \n \n ')
 else:
-  print ('E tambem um triangulo isosceles \n\n\n\n\n\n\n\n\n')
+  print ("E tambem um triangulo isosceles  \n \n \n \n \n \n \n ")
    
-   
-  
-
- 
   
 #__________________________________________________________________________________________________________
 
 '''
 EXERCISE 2
 Determine se um ano é bissexto. Verifique no Google como fazer isso...'''
+ano = int(input('Digite um ano para calular se e bisexto: '))
+if ((ano % 4) == 0 and (ano%100)!=0) or ((ano % 4) == 0 and (ano % 400) == 0):
+  print ('Ano bisexto\n \n \n \n \n \n \n ')
+else:
+  print('Ano nao bisexto \n \n \n \n \n \n \n ')
 #__________________________________________________________________________________________________________
 '''
 EXERCISE 3
