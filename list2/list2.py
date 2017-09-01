@@ -2,6 +2,34 @@
 Faça um Programa que peça os três lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, 
 caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
 '''
+val_a = False
+val_b = False
+val_c = False
+print('Digite os 3 lados de um triangulo(A,B e C) em CM: ')
+a = int(input('A : '))
+b = int(input('B : '))
+c = int(input('C : '))
+
+if a > ((b-c)*-1) and a < (b+c):
+  val_a = True
+if b > ((a-c)*-1) and b < (a+c):
+  val_b = True
+if c > ((a-b)*-1) and c < (a+b):
+  val_c = True
+if val_a == True and val_b == True and val_c == True:
+  print('Valores validos para se formar um triangulo')
+if a == b and a == c and b == c:
+  print('E tambem o triangulo e um equilatero')
+elif a != b and a !=c and b!= c:
+  print('E tambem e um triangulo escaleno')
+else:
+  print ('E tambem um triangulo isosceles \n\n\n\n\n\n\n\n\n')
+   
+   
+  
+
+ 
+  
 #__________________________________________________________________________________________________________
 
 '''
