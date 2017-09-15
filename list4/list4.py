@@ -79,9 +79,37 @@ print ("Lista intercalada: ",vet3,"\n\n\n\n\n\n\n\n\n\n\n\n")
 '''
 4. Seja o statement sobre diversidade: “The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and whatever your background, we welcome you.”. Gere uma lista de palavras deste texto com split(), a seguir crie uma lista com as palavras que começam ou terminam com uma das letras “python”. Imprima a lista resultante. Não se esqueça de remover antes os caracteres especiais e cuidado com maiúsculas e minúsculas.
 '''
+x = "The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and whatever your background, we welcome you."
+x= x.replace("."," ")
+x= x.replace(","," ")
+x= x.replace(":"," ")
+words = list()
+words = x.split()
+words_py = list()
+for y in range (len(words)):
+	if words[y].startswith('p') or words[y].startswith('y') or words[y].startswith('t') or words[y].startswith('h')or words[y].startswith('o') or words[y].startswith('n'):
+		words_py.append(words[y])
+	elif words[y].endswith('p') or words[y].endswith('y') or words[y].endswith('t') or words[y].endswith('h') or words[y].endswith('o') or words[y].endswith('n'):
+		words_py.append(words[y])
+print (words_py)
+
+print ("\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 '''
 5. Seja o mesmo texto acima “splitado”. Calcule quantas palavras possuem uma das letras “python” e que tenham mais de 4 caracteres. Não se esqueça de transformar maiúsculas para minúsculas e de remover antes os caracteres especiais.
 '''	
+x = x.lower()
+words = list()
+words = x.split()
+words_py = list()
+for y in range (len(words)):
+	if words[y].startswith('p') or words[y].startswith('y') or words[y].startswith('t') or words[y].startswith('h')or words[y].startswith('o') or words[y].startswith('n'):
+		if len(words[y])> 4:
+			words_py.append(words[y])
+	elif words[y].endswith('p') or words[y].endswith('y') or words[y].endswith('t') or words[y].endswith('h') or words[y].endswith('o') or words[y].endswith('n'):
+			if len(words[y])> 4:
+				words_py.append(words[y])
+				
+print (words_py)
 	
 	
