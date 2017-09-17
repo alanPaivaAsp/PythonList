@@ -31,7 +31,7 @@ else:
 '''
 EXERCISE 2
 Determine se um ano é bissexto. Verifique no Google como fazer isso...'''
-ano = int(input('Digite um ano para calular se e bisexto: '))
+ano = int(input('Digite um ano para calular se e bissexto: '))
 if ((ano % 4) == 0 and (ano%100)!=0) or ((ano % 4) == 0 and (ano % 400) == 0):
   print ('Ano bisexto\n \n \n \n \n \n \n ')
 else:
