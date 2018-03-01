@@ -142,7 +142,7 @@ Sabendo que str( ) converte valores numéricos para string, calcule quantos díg
 a um milhão. '''
 #imprimindo o solicitado convertendo int para str e pegando a quantidade de algarismos através do len
 print ("Existem %s digitos em 2^1000000" %len(str(2**1000000)))
-
+#teste teste
 
 #--------------------------------------------------------------------------------------------
 
